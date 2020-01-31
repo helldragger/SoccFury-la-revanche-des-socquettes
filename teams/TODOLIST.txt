@@ -1,0 +1,3 @@
+- [ ] Faire eviter les blocages
+- [ ] Donner des rôles
+- [ ] Créer des tactiques (tactique miroir)

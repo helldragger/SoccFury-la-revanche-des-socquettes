@@ -1,4 +1,4 @@
-package fields;
+package TeamJacquiotTsotetzo.fields;
 
 import EDU.gatech.cc.is.util.Vec2;
 

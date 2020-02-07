@@ -1,4 +1,4 @@
-package mirror;
+package TeamJacquiotTsotetzo.mirror;
 
 import EDU.gatech.cc.is.util.Vec2;
 

@@ -1,4 +1,4 @@
-package swarm;
+package TeamJacquiotTsotetzo.swarm;
 
 import EDU.gatech.cc.is.abstractrobot.KinSensor;
 import EDU.gatech.cc.is.util.Vec2;

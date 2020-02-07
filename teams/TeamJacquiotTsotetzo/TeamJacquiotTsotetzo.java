@@ -1,19 +1,18 @@
+package TeamJacquiotTsotetzo;
+
 /*
  * LeftTeam.java
  */
 
 import EDU.gatech.cc.is.util.Vec2;
-import fields.FieldSensor;
-import mirror.Mirror;
-import swarm.DirSensor;
-import swarm.Swarm;
+import TeamJacquiotTsotetzo.fields.FieldSensor;
+import TeamJacquiotTsotetzo.mirror.Mirror;
+import TeamJacquiotTsotetzo.swarm.DirSensor;
+import TeamJacquiotTsotetzo.swarm.Swarm;
 import EDU.gatech.cc.is.abstractrobot.*;
-import EDU.gatech.cc.is.communication.Message;
+import TeamJacquiotTsotetzo.communication.IndexationMessage;
 
-import java.lang.Math.*;
 import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
 /**
  * Example of a simple strategy for a robot
  * soccer team.
@@ -26,7 +25,7 @@ import java.util.Map;
  */
 
 
-public class LeftTeam extends ControlSystemSS implements DirSensor, Swarm, FieldSensor, Mirror
+public class TeamJacquiotTsotetzo extends ControlSystemSS implements DirSensor, Swarm, FieldSensor, Mirror
 	{
 	int focusedIndex = -1;
 	Vec2 lastFocusedOpponent;
@@ -249,28 +248,3 @@ public class LeftTeam extends ControlSystemSS implements DirSensor, Swarm, Field
 	}
 }
 
-class IndexationMessage extends Message {
-
-	/**
-	 *
-	 */
-	private static final long serialVersionUID = 1L;
-
-	Map<Integer, Vec2> indexes = new HashMap<>();
-	Vec2 origin;
-
-	IndexationMessage(final Vec2[] opponents, Vec2 origin) {
-		for (int i = 1; i < opponents.length; i++) {
-			indexes.put(i, opponents[i]);
-		}
-		this.origin = origin;
-	}
-
-	Vec2 getOpponent(final int id) {
-		return indexes.get(id);
-	}
-
-	Vec2 getBroadcaster(){
-		return new Vec2(origin);
-	}
-}

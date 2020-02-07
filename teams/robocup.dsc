@@ -145,19 +145,19 @@ object EDU.gatech.cc.is.simulation.GolfBallNoiseSim 0 0 0 0.02
 // numbers according to the order in which they are listed here.
 
 //======WEST TEAM======
-robot EDU.gatech.cc.is.abstractrobot.SocSmallSim LeftTeam
+robot EDU.gatech.cc.is.abstractrobot.SocSmallSim TeamJacquiotTsotetzo.TeamJacquiotTsotetzo
 //------------your control system name goes here ^^^^^^^^
 	-1.2  0    0 xEAEA00 xFFFFFF 1
-robot EDU.gatech.cc.is.abstractrobot.SocSmallSim LeftTeam
+robot EDU.gatech.cc.is.abstractrobot.SocSmallSim TeamJacquiotTsotetzo.TeamJacquiotTsotetzo
 //------------your control system name goes here ^^^^^^^^
 	-.5   0    0 xEAEA00 xFFFFFF 1
-robot EDU.gatech.cc.is.abstractrobot.SocSmallSim LeftTeam
+robot EDU.gatech.cc.is.abstractrobot.SocSmallSim TeamJacquiotTsotetzo.TeamJacquiotTsotetzo
 //------------your control system name goes here ^^^^^^^^
 	-.15  .5   0 xEAEA00 xFFFFFF 1
-robot EDU.gatech.cc.is.abstractrobot.SocSmallSim LeftTeam
+robot EDU.gatech.cc.is.abstractrobot.SocSmallSim TeamJacquiotTsotetzo.TeamJacquiotTsotetzo
 //------------your control system name goes here ^^^^^^^^
 	-.15  0    0 xEAEA00 xFFFFFF 1
-robot EDU.gatech.cc.is.abstractrobot.SocSmallSim LeftTeam
+robot EDU.gatech.cc.is.abstractrobot.SocSmallSim TeamJacquiotTsotetzo.TeamJacquiotTsotetzo
 //------------your control system name goes here ^^^^^^^^
 	-.15  -.5  0 xEAEA00 xFFFFFF 1
 

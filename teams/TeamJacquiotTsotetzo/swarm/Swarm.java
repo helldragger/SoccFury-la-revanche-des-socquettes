@@ -9,7 +9,7 @@ public interface Swarm extends DirSensor{
     double COHESION_FACTOR = 1;
     double SEPARATION_MAX_DISTANCE = 10*0.06;
     double SEPARATION_FACTOR = 0.35;
-    double ALIGNMENT_FACTOR = 0.2;
+    double ALIGNMENT_FACTOR = 0.05;
 
     //public default void recalculateThreshold
 

@@ -1,0 +1,26 @@
+package TeamJacquiotTsotetzo.subsomption;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import EDU.gatech.cc.is.abstractrobot.SocSmall;
+import EDU.gatech.cc.is.util.Vec2;
+
+/**
+ * Subsomption
+ */
+public interface Subsomptionbackup {
+
+    List<SubsomptionLayer> layers = new ArrayList<>();
+
+    public default Vec2 applySubsomption(SocSmall abstract_robot){
+        for (SubsomptionLayer layer : layers) {
+            if (layer.isActivated(abstract_robot)) return layer.action(abstract_robot);
+        }
+        return new Vec2(0,0);
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+    public default void addLayer(SubsomptionLayer layer){
+        layers.add(layer);
+    }
+}
